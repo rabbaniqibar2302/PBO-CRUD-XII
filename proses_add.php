@@ -19,7 +19,3 @@ if ($tambah){
 }else{
     echo "Data Tidak berhasil di Tambahkan";
 }
-
-
-
-?>
