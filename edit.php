@@ -21,6 +21,9 @@
             <label>No Hape</label>
             <input type="number" name="no_hape">
         </div>
+        <div>
+            <input type="submit" value="Edit">
+        </div>
     </form>
 
 </body>
