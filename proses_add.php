@@ -15,7 +15,18 @@ $tambah = mysqli_query($host,"insert into user values(
     )");
 
 if ($tambah){
-    echo "Data Berhasil Di Tambahkan";
+    ?>
+    <script>
+        alert("Data Berhasil Di Tambahkan");
+        window.location.href = "index.php";
+        </script>
+    <?php
 }else{
-    echo "Data Tidak berhasil di Tambahkan";
+    ?>
+    <script>
+        alert("Data Tidak Berhasil Di Tambahkan");
+        window.location.href = "add.php";
+    </script>
+    <?php
 }
+?>
