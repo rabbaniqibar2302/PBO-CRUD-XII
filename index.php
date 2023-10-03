@@ -11,7 +11,8 @@ $i = 1;
 </head>
 
 <body>
-    <h2>Data User</h2>
+    <h2>Manajemen Masjid</h2>
+    <h5>Jadwal Ceramah Ahad Subuh</h5>
     <a href="add.php">Tambah Data</a>
     <table border="1">
         <tr>
@@ -27,7 +28,7 @@ $i = 1;
             echo "<td>" . $i++ . "</td>";
             echo "<td>" . $user['nama'] . "</td>";
             echo "<td>" . $user['email'] . "</td>";
-            echo "<td>" . $user['no_hape'] . "</td>";
+            echo "<td>" . $user['no_hape'] . "</td>";   
             echo "<td>" . "<a href='edit.php?id=$user[id]'>edit</a>" . "</td>";
             echo "<td>" . "<a href='delete.php?id=$user[id]'>delete</a>" . "</td>";
             echo "</tr>";
