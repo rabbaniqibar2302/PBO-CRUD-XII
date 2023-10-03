@@ -1,8 +1,14 @@
 <?php
 include("config.php");
 $id = $_GET['id'];
-$cek = mysqli_query($host,"select * from user where id=$id")
+$cek = mysqli_query($host,"select * from user where id=$id");
+while ($user = mysqli_fetch_array($cek)){
+    $nama = $user['nama'];
+    $email = $user['email'];
+    $no_hape = $user['no_hape'];
+}
 ?>
+
 <html>
 
 <head>
@@ -15,7 +21,7 @@ $cek = mysqli_query($host,"select * from user where id=$id")
 
     <form action="proses_edit.php">
         <div>
-            <input type="hidden" name="id" value="<?php echo $_GET['id']?>">
+            <input type="hidden" name="id" value="<?php echo $id?>">
         </div>
         <div>
             <label>Nama</label>
