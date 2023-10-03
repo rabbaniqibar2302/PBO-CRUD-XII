@@ -19,7 +19,7 @@ if($edit){
     ?>
     <script>
         alert("Data tidak Berhasil Di Edit");
-        window.location.href = "index.php";
+        window.location.href = "edit.php";
     </script>
     <?php
 }

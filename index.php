@@ -29,7 +29,7 @@ $i = 1;
             echo "<td>" . $user['email'] . "</td>";
             echo "<td>" . $user['no_hape'] . "</td>";
             echo "<td>" . "<a href='edit.php?id=$user[id]'>edit</a>" . "</td>";
-            echo "<td>" . "<a href='delete.php'>delete</a>" . "</td>";
+            echo "<td>" . "<a href='delete.php?id=$user[id]'>delete</a>" . "</td>";
             echo "</tr>";
         }
         ?>
