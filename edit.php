@@ -19,7 +19,7 @@ while ($user = mysqli_fetch_array($cek)){
     <a href="index.php">Back To Home</a>
     <h2>Edit Data</h2>
 
-    <form action="proses_edit.php" method="post">
+    <form action="config.php" method="post">
         <div>
             <input type="hidden" name="id" value="<?php echo $id?>">
         </div>
@@ -36,7 +36,7 @@ while ($user = mysqli_fetch_array($cek)){
             <input type="number" name="no_hape" value="<?php echo $no_hape?>">
         </div>
         <div>
-            <input type="submit" value="Edit">
+            <input type="submit" value="Edit" name="edit">
         </div>
     </form>
 
