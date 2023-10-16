@@ -21,7 +21,7 @@
         foreach($db->show_data() as $data){
             echo "
             <tr>
-            <td>.$no++.</td>
+            <td>".$no++."</td>
             <td>{$data['nama']}</td>
             <td>{$data['email']}</td>
             <td>{$data['no_hape']}</td>
