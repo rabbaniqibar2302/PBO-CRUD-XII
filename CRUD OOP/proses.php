@@ -18,7 +18,7 @@ if ($aksi == "tambah"){
     header("location:index.php");
 
 }elseif($aksi == "update"){
-    $db->update();
+    $db->update_data($_POST['id'], $_POST['nama'], $_POST['email'], $_POST['no_hape']);
     header("location:index.php");
 
 }

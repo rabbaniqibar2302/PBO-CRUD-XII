@@ -26,7 +26,7 @@
             <td>{$data['nama']}</td>
             <td>{$data['email']}</td>
             <td>{$data['no_hape']}</td>
-            <td><a href=''>update</a></td>
+            <td><a href='update.php?id={$data['id']}&aksi=update'>update</a></td>
             <td><a href='proses.php?id={$data['id']}&aksi=hapus'>delete</a></td>
             </tr>
             ";

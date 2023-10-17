@@ -22,7 +22,14 @@ class db{
             $hasil[] = $data;
         }
         return $hasil;
-
+    }
+    
+    function detail_data($id){
+        $show = mysqli_query($this->connect,"select * from user where = $id");
+        while($data = mysqli_fetch_array($show)){
+            $hasil[] = $data;
+        }
+        return $hasil;
     }
 
     function add_data($nama, $email, $no_hape){
@@ -37,6 +44,15 @@ class db{
     function hapus_data($id){
         mysqli_query($this->connect,"delete from user where 
         id = '$id'");
+    }
+
+    function update_data($id,$nama,$email,$no_hape){
+        mysqli_query($this->connect,"update user set
+        nama = '$nama',
+        email = '$email',
+        no_hape = '$no_hape'
+        where id = '$id'
+        ");
     }
 
     
