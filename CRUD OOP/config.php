@@ -34,6 +34,11 @@ class db{
         '$no_hape')");
     }
 
+    function hapus_data($id){
+        mysqli_query($this->connect,"delete from user where 
+        id = '$id'");
+    }
+
     
 
 }

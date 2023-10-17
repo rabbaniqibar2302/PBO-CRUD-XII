@@ -13,6 +13,7 @@
             <th>Nama</th>
             <th>Email</th>
             <th>No Hape</th>
+            <th colspan="2">Aksi</th>
         </tr>
         <?php
         include 'config.php';
@@ -25,6 +26,8 @@
             <td>{$data['nama']}</td>
             <td>{$data['email']}</td>
             <td>{$data['no_hape']}</td>
+            <td><a href=''>update</a></td>
+            <td><a href='proses.php?id={$data['id']}&aksi=hapus'>delete</a></td>
             </tr>
             ";
         }

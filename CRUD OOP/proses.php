@@ -11,5 +11,15 @@ $aksi = $_GET['aksi'];
 // tambah, hapus, update
 if ($aksi == "tambah"){
     $db->add_data($_POST['nama'], $_POST['email'], $_POST['no_hape']);
+    header("location:index.php");
+
+}elseif($aksi == "hapus"){
+    $db->hapus_data($_GET['id']);
+    header("location:index.php");
+
+}elseif($aksi == "update"){
+    $db->update();
+    header("location:index.php");
+
 }
 ?>
