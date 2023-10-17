@@ -22,4 +22,3 @@ if ($aksi == "tambah"){
     header("location:index.php");
 
 }
-?>

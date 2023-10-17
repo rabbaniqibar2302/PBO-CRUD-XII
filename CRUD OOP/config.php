@@ -25,7 +25,7 @@ class db{
     }
     
     function detail_data($id){
-        $show = mysqli_query($this->connect,"select * from user where = $id");
+        $show = mysqli_query($this->connect,"select * from user where id = $id");
         while($data = mysqli_fetch_array($show)){
             $hasil[] = $data;
         }
