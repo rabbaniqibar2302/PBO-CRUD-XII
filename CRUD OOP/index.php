@@ -6,13 +6,13 @@
 
 <body>
     <h1>Data User</h1>
-    <a href="">Tambah Data</a>
+    <a href="add.php">Tambah Data</a>
     <table border="1">
         <tr>
             <th>No</th>
             <th>Nama</th>
-            <th>Alamat</th>
-            <th>Usia</th>
+            <th>Email</th>
+            <th>No Hape</th>
         </tr>
         <?php
         include 'config.php';
